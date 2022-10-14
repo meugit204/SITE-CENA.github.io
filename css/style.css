@@ -7,6 +7,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body, html {
+    height: 100%;
+}
+
 .header-topo {
     width: 100%;
     display: flex;
@@ -125,15 +129,16 @@
     max-width: 100%;
 }
 
-.container-chamada img {
-    width: 40px;
-    height: 40px;
-    min-width: 40px;
+.icon-seta {
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    background-image: url(/imagens/arrow.png);
     position: relative;
     left: 50%;
-    top: -70px;
-    display: block;
-    max-width: 100%;
+    top: -80px;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
 }
 
 .container-mosaico {
@@ -152,7 +157,6 @@
     background-color: #096a9b;
     color: #fff;
     max-width: 100%;
-
 }
 
 .mosaico02 {
@@ -163,9 +167,6 @@
     color: #fff;
     max-width: 100%;
     text-align: justify;
-
-
-
 }
 
 .container-ap {
@@ -187,7 +188,6 @@
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: underline black 2px;
-    ;
     line-height: 30px;
     font-size: 0.90rem;
 }
@@ -199,12 +199,10 @@
     justify-content: center;
     align-items: center;
     max-width: 100%;
-
-
-
 }
 
 .roda-pe p {
+    padding: 1rem;
     text-align: center;
     font-weight: bold;
 }
@@ -229,6 +227,7 @@
         height: 100%;
         position: static;
         display: inline-block;
+        margin: 3rem 2rem;
     }
 
     .container-chamada {
@@ -241,11 +240,18 @@
 
     .container-mosaico {
         width: 100%;
-
     }
 
     .mosaico01, .mosaico02 {
         width: 50%;
+    }
+
+    .container-ap {
+        width: 100%;
+    }
+
+    .container-ap h3 {
+        padding: 2rem 2rem;
     }
 }
 
@@ -256,10 +262,14 @@
 
     .container-ap {
         width: 100%;
-
     }
 
     .container-ap p {
         text-align: center;
+    }
+
+    .box-form {
+        margin: 3rem 2rem;
+        width: 300px;
     }
 }
