@@ -133,7 +133,7 @@ body, html {
     width: 60px;
     height: 60px;
     background-size: 100%;
-    background-image: url(/imagens/arrow.png);
+    background-image: url(imagens/arrow.png);
     position: relative;
     left: 50%;
     top: -80px;
